@@ -8,6 +8,11 @@
 	 <p> Hello </p>
 	 <div ng-controller = "meetupsController">
 	 	 <h1>There are {{meetupsCount}}  meetups </h1>
+	 	 <ul> 
+		 	 <li ng-repeat = "meetup in meetups">
+		 	 	{{meetup.name}}
+		 	 </li>
+	 	 </ul>
 	 </div>
  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"> </script>
  <script type="text/javascript" src="/js/controllers/meetups-controller.js"> </script>
